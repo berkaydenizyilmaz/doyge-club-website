@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { Button } from "@/components/ui/button";
 import { announcements } from "@/data/announcements";
 import { doygeContent } from "@/data/doygeContents";
