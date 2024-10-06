@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="flex flex-col items-center gap-16 p-8 lg:p-16 max-w-7xl mx-auto">
       {/* Başlıklar */}
-      <div className="text-center mt-8 space-y-20">
+      <div className="text-center mt-8 space-y-6 lg:space-y-8">
         <h1 className="text-5xl lg:text-6xl font-bold">
           Dijital Oyun Geliştiricileri Kulübü
         </h1>
@@ -20,7 +20,7 @@ const Home = () => {
 
       {/* Hakkımızda Butonu */}
       <Link href="/about" passHref>
-        <p className="mt-6 py-3 px-8 bg-purple-400 text-purple-900 font-semibold rounded-lg text-lg hover:bg-purple-600 transition">
+        <p className="mt-4 py-3 px-8 bg-purple-400 text-purple-900 font-semibold rounded-lg text-lg hover:bg-purple-600 transition">
           Hakkımızda
         </p>
       </Link>
@@ -41,7 +41,7 @@ const Home = () => {
         <h2 className="text-4xl lg:text-5xl font-bold mb-8">
           Doyge Ne Yapıyor?
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {doygeContent.map((item, index) => (
             <div
               key={index}
@@ -61,7 +61,7 @@ const Home = () => {
         <h2 className="text-4xl lg:text-5xl font-bold mb-12 text-center">
           Bazı Projelerimiz
         </h2>
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-12 lg:gap-16">
           {/* Proje 1 */}
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/2">
@@ -107,38 +107,48 @@ const Home = () => {
       {/* Duyurular */}
       <div className="mt-16 w-full text-center">
         <h2 className="text-4xl lg:text-5xl font-bold mb-12">Duyurular</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
+        <div>
           {/* Duyuru Kartları */}
-          {announcements.map((announcement, index) => (
+          {announcements.length > 0 && (
             <div
-              key={index}
-              className="flex flex-col justify-between h-full p-6 bg-primary-light rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
+              className={`grid ${
+                announcements.length === 1
+                  ? "grid-cols-1 justify-items-center"
+                  : `md:grid-cols-${Math.min(announcements.length, 3)}`
+              } gap-12 lg:gap-16`}
             >
-              <div>
-                <h3 className="text-2xl lg:text-3xl font-semibold mb-4">
-                  {announcement.title}
-                </h3>
-                <p className="text-lg">{announcement.content}</p>
-              </div>
+              {announcements.map((announcement, index) => (
+                <div
+                  key={index}
+                  className="flex flex-col justify-between h-full p-6 bg-primary-light rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
+                >
+                  <div>
+                    <h3 className="text-2xl lg:text-3xl font-semibold mb-4">
+                      {announcement.title}
+                    </h3>
+                    <p className="text-lg">{announcement.content}</p>
+                  </div>
 
-              {/* Tarih ve Link Kısımları */}
-              <div className="mt-6">
-                {announcement.date && (
-                  <p className="text-lg mt-4 bg-primary-dark rounded-md p-2 text-white">
-                    Tarih: {announcement.date}
-                  </p>
-                )}
+                  {/* Tarih ve Link Kısımları */}
+                  <div className="mt-6">
+                    {announcement.date && (
+                      <p className="text-lg mt-4 bg-primary-dark rounded-md p-2 text-white">
+                        Tarih: {announcement.date}
+                      </p>
+                    )}
 
-                {announcement.link && (
-                  <Link href={announcement.link} passHref>
-                    <p className="text-lg mt-4 bg-purple-400 text-purple-900 font-semibold rounded-lg py-2 px-4 hover:bg-purple-600 hover:text-purple-100 transition cursor-pointer">
-                      {announcement.linkText}
-                    </p>
-                  </Link>
-                )}
-              </div>
+                    {announcement.link && (
+                      <Link href={announcement.link} passHref>
+                        <p className="text-lg mt-4 bg-purple-400 text-purple-900 font-semibold rounded-lg py-2 px-4 hover:bg-purple-600 hover:text-purple-100 transition cursor-pointer">
+                          {announcement.linkText}
+                        </p>
+                      </Link>
+                    )}
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          )}
         </div>
       </div>
     </div>
