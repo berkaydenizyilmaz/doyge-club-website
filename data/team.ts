@@ -6,7 +6,7 @@ export interface EkipType {
   linkedin: string;
 }
 
-export const ekip: EkipType[] = [
+export const team: EkipType[] = [
   {
     id: "1",
     name: "Mustafa Buğra Karatürk",

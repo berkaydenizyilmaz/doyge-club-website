@@ -1,4 +1,4 @@
-import { ekip } from "@/data/ekip";
+import { team } from "@/data/team";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -56,7 +56,7 @@ const AboutPage = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mt-6">
           {/* Ekip Üyesi Kartları */}
-          {ekip.map((uye) => (
+          {team.map((uye) => (
             <div key={uye.id} className="flex flex-col items-center">
               <Image
                 src={uye.img}
