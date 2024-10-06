@@ -31,6 +31,12 @@ const Header = () => {
             Ana Sayfa
           </Link>
           <Link
+            href="/#duyurular"
+            className="text-lg hover:underline transition duration-300"
+          >
+            Duyurular
+          </Link>
+          <Link
             href="/hakkimizda"
             className={`text-lg hover:underline transition duration-300 ${
               pathname === "/hakkimizda"

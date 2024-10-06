@@ -105,7 +105,7 @@ const Home = () => {
       </div>
 
       {/* Duyurular */}
-      <div className="mt-16 w-full text-center">
+      <div id="duyurular" className="mt-16 w-full text-center">
         <h2 className="text-4xl lg:text-5xl font-bold mb-12">Duyurular</h2>
         <div>
           {/* Duyuru Kartları */}
