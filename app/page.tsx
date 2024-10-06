@@ -1,5 +1,6 @@
 import { announcements } from "@/data/announcements";
 import { doygeContent } from "@/data/doygeContents";
+import { projects } from "@/data/projects";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -20,7 +21,7 @@ const Home = () => {
 
       {/* Hakkımızda Butonu */}
       <Link href="/about" passHref>
-        <p className="mt-4 py-3 px-8 bg-purple-400 text-purple-900 font-semibold rounded-lg text-lg hover:bg-purple-600 transition">
+        <p className="mt-4 py-3 px-8 bg-purple-400 text-purple-900 font-semibold rounded-lg text-lg hover:bg-purple-600 hover:text-purple-100 transition">
           Hakkımızda
         </p>
       </Link>
@@ -66,7 +67,7 @@ const Home = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/2">
               <Image
-                src="/proje/discord.jpg"
+                src="/projects/discord/discord.jpg"
                 alt="Proje 1"
                 width={800}
                 height={500}
@@ -74,11 +75,10 @@ const Home = () => {
               />
             </div>
             <div className="w-full md:w-1/2 text-left space-y-4">
-              <h3 className="text-2xl lg:text-3xl font-semibold">Proje 1</h3>
-              <p className="text-lg">
-                Bu projede bir oyun geliştirdik. Oyun içerisinde oyuncular
-                çeşitli görevler yaparak ilerliyor ve eğleniyorlar.
-              </p>
+              <h3 className="text-2xl lg:text-3xl font-semibold">
+                {projects[0].title}
+              </h3>
+              <p className="text-lg">{projects[0].shortDescription}</p>
             </div>
           </div>
 
@@ -86,7 +86,7 @@ const Home = () => {
           <div className="flex flex-col md:flex-row-reverse items-center gap-12">
             <div className="w-full md:w-1/2">
               <Image
-                src="/proje/tilevania.jpg"
+                src="/projects/tilevania/tilevania.jpg"
                 alt="Proje 2"
                 width={800}
                 height={500}
@@ -94,11 +94,10 @@ const Home = () => {
               />
             </div>
             <div className="w-full md:w-1/2 text-left space-y-4">
-              <h3 className="text-2xl lg:text-3xl font-semibold">Proje 2</h3>
-              <p className="text-lg">
-                Bu proje, bir web geliştirme projesidir. Kullanıcılar siteye
-                girerek içerik oluşturabilir ve paylaşabilir.
-              </p>
+              <h3 className="text-2xl lg:text-3xl font-semibold">
+                {projects[1].title}
+              </h3>
+              <p className="text-lg">{projects[1].shortDescription}</p>
             </div>
           </div>
         </div>
