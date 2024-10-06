@@ -3,15 +3,18 @@ import Link from "next/link";
 
 const ContactPage = () => {
   return (
-    <div className="min-h-screen bg-primary p-4 flex flex-col items-center py-20">
+    <div className="min-h-scree p-4 flex flex-col items-center py-20">
+      {/* Sayfa Başlığı */}
       <h1 className="text-4xl md:text-6xl font-semibold mb-4 text-center">
         İletişim
       </h1>
 
+      {/* Sayfa Açıklaması */}
       <p className="text-lg text-center mb-6">
         Bize aşağıdaki adreslerden ulaşabilirsiniz.
       </p>
 
+      {/* İletişim Bilgileri */}
       <div className="flex flex-col gap-4 w-full max-w-md">
         <div className="border p-4 rounded-md shadow-sm">
           <h2 className="text-xl font-semibold">E-Mail</h2>
