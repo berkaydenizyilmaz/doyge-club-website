@@ -5,23 +5,10 @@ import { doygeContent } from "@/data/doygeContents";
 import { projects } from "@/data/projects";
 import Image from "next/image";
 import Link from "next/link";
-import { seo } from "@/data/seo";
 
 const Home = () => {
   return (
     <>
-      <Head>
-        <title>{seo.title} | Dijital Oyun Geliştiricileri Kulübü</title>
-        <meta name="description" content={seo.description} />
-        <meta
-          name="keywords"
-          content="Dijital Oyun Geliştiricileri, Oyun Geliştirme, Proje"
-        />
-        <meta property="og:title" content={seo.title} />
-        <meta property="og:description" content={seo.description} />
-        <meta property="og:image" content={seo.image} />
-      </Head>
-
       <div className="flex flex-col items-center gap-16 p-8 lg:p-16 max-w-7xl mx-auto">
         {/* Başlıklar */}
         <div className="text-center mt-8 space-y-6 lg:space-y-8">
