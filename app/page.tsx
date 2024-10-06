@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { announcements } from "@/data/announcements";
 import { doygeContent } from "@/data/doygeContents";
 import { projects } from "@/data/projects";
@@ -20,7 +21,7 @@ const Home = () => {
       </div>
 
       {/* Hakkımızda Butonu */}
-      <Link href="/about" passHref>
+      <Link href="/hakkimizda" passHref>
         <p className="mt-4 py-3 px-8 bg-purple-400 text-purple-900 font-semibold rounded-lg text-lg hover:bg-purple-600 hover:text-purple-100 transition">
           Hakkımızda
         </p>
@@ -79,6 +80,12 @@ const Home = () => {
                 {projects[0].title}
               </h3>
               <p className="text-lg">{projects[0].shortDescription}</p>
+
+              <Link href={`/projeler/doyge-bot`} passHref>
+                <Button className="bg-purple-400 text-purple-900 font-semibold hover:bg-purple-600 hover:text-purple-100 transition mt-4 py-2 px-4 rounded-lg">
+                  Projeye Git
+                </Button>
+              </Link>
             </div>
           </div>
 
@@ -98,6 +105,12 @@ const Home = () => {
                 {projects[1].title}
               </h3>
               <p className="text-lg">{projects[1].shortDescription}</p>
+
+              <Link href={`/projeler/tilevania`} passHref>
+                <Button className="bg-purple-400 text-purple-900 font-semibold hover:bg-purple-600 hover:text-purple-100 transition mt-4 py-2 px-4 rounded-lg">
+                  Projeye Git
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

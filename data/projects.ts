@@ -18,7 +18,7 @@ export interface ProjectType {
 
 export const projects: ProjectType[] = [
   {
-    id: "1",
+    id: "doyge-bot",
     title: "Doyge Discord Bot",
     shortDescription:
       "DOYGE Bot, üniversitemizin Dijital Oyun Geliştiricileri kulübüne ait discord sunucusunu yönetmek için tasarlanmış güçlü bir yardımcıdır.",
@@ -49,10 +49,11 @@ Programlama Dili: JavaScript`,
         role: "Proje Yöneticisi",
       },
     ],
+    github: "https://www.linkedin.com/in/berkaydenizyilmaz/",
   },
 
   {
-    id: "2",
+    id: "tilevania",
     title: "Tilevania Platformer Oyunu",
     shortDescription:
       "Tilevania, klasik 2D platform oyunlarına dayalı bir projedir. Oyuncular, farklı platformlar arasında zıplayarak engelleri aşarken düşmanlarla mücadele eder ve çeşitli görevleri tamamlar.",
@@ -71,7 +72,7 @@ Grafik Motoru: Tilemap sistemi kullanarak 2D sprite tabanlı seviyeler`,
       "Zamanlı görevler ve bulmacalar",
       "Kolaydan zora doğru artan zorluk seviyeleri",
     ],
-    img: ["/projects/tilevania/tilevania-1.png"],
+    img: ["/projects/tilevania/tilevania-1.jpg"],
     projectTeam: [
       {
         name: "Mustafa Buğra Karatürk",
@@ -81,7 +82,7 @@ Grafik Motoru: Tilemap sistemi kullanarak 2D sprite tabanlı seviyeler`,
   },
 
   {
-    id: "3",
+    id: "ilk-tiklayan-kazanir",
     title: "İlk Tıklayan Kazanır Oyunu",
     shortDescription:
       "Bu eğitim amaçlı oyun, hız ve refleks üzerine kurulmuştur. Oyuncular, ekrandaki hedefe ilk tıklayan kişi olmaya çalışırlar.",
