@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { projects } from "@/data/projects";
+import Image from "next/image";
 import Link from "next/link";
 
 interface ProjectDetailsProps {
@@ -28,9 +29,11 @@ const ProjectDetail = ({ params }: ProjectDetailsProps) => {
       {/* Ana Resim ve Kısa Açıklama */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 mt-14">
         <div>
-          <img
+          <Image
             src={project.mainImg}
             alt={project.title}
+            width={500}
+            height={300}
             className="w-full h-96 object-cover rounded-lg shadow-md"
           />
         </div>
@@ -63,9 +66,11 @@ const ProjectDetail = ({ params }: ProjectDetailsProps) => {
         <h2 className="text-2xl font-semibold text-center p-8">Görseller</h2>
         <div className="flex flex-wrap justify-center gap-4">
           {project.img.map((image, index) => (
-            <img
+            <Image
               key={index}
               src={image}
+              width={300}
+              height={200}
               alt={`${project.title} - Image ${index + 1}`}
               className="w-96 h-60 object-cover rounded-md shadow-md"
             />
@@ -78,7 +83,7 @@ const ProjectDetail = ({ params }: ProjectDetailsProps) => {
         <div className="text-center mb-4">
           <Link href={project.github} target="_blank" rel="noopener noreferrer">
             <Button className="px-4 py-2 bg-purple-700 text-white font-semibold rounded-lg text-lg hover:bg-purple-600 hover:text-white transition">
-              GitHub'da İncele
+              {"Github'da İncele"}
             </Button>
           </Link>
         </div>

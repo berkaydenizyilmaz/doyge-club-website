@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { projects } from "@/data/projects";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -13,9 +14,11 @@ const ProjectsPage = () => {
             key={project.id}
             className="bg-purple-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
           >
-            <img
+            <Image
               src={project.mainImg}
               alt={project.title}
+              width={500}
+              height={300}
               className="w-full h-48 object-cover rounded-md"
             />
             <h2 className="text-2xl font-semibold mt-4">{project.title}</h2>
