@@ -12,8 +12,8 @@ const config: Config = {
         background: "#f3f4f6", // Arka plan rengi (gerekirse değiştirebilirsin)
         foreground: "#1f2937", // Metin rengi (gerekirse değiştirebilirsin)
         primary: {
-          light2: "EBD3F8", // Açık mor
-          light: "#AD49E1", // Açık mor
+          light2: "#EBD3F8", // Açık mor
+          light: "#AD49D1", // Açık mor
           DEFAULT: "#7A1CAC", // Mor
           dark: "#2E073F", // Koyu mor
         },
