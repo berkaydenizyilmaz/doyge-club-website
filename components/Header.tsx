@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   const pathname = usePathname(); // Kullanıcının mevcut sayfasını al
@@ -10,7 +11,7 @@ const Header = () => {
   return (
     <header className="bg-primary-dark p-4 shadow-md">
       {/* Logo */}
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div className="container mx-auto flex flex-row justify-between items-center">
         <Link href="/">
           <Image
             src="/logo.png"
@@ -20,8 +21,14 @@ const Header = () => {
             className="mb-4 md:mb-0"
           />
         </Link>
+
+        {/* Mobil menü butonu */}
+        <div className="md:hidden">
+          <MobileMenu />
+        </div>
+
         {/* Sayfa menüsü */}
-        <nav className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
+        <nav className="hidden md:flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
           <Link
             href="/"
             className={`text-lg hover:underline transition duration-300 ${
