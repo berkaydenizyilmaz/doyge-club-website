@@ -4,10 +4,58 @@ import { doygeContent } from "@/data/doygeContents";
 import { projects } from "@/data/projects";
 import Image from "next/image";
 import Link from "next/link";
+import Head from "next/head";
 
 const Home = () => {
   return (
     <>
+      <Head>
+        {/* Sayfa Başlığı */}
+        <title>
+          Dijital Oyun Geliştiricileri Kulübü | Hayal et, Kodla, Geliştir!
+        </title>
+
+        {/* Meta Açıklaması */}
+        <meta
+          name="description"
+          content="Dijital Oyun Geliştiricileri Kulübü, Amasya Üniversitesi'nde oyun ve yazılım geliştirme alanında projeler üreten bir topluluktur. Hayal et, kodla, geliştir!"
+        />
+
+        {/* Anahtar Kelimeler */}
+        <meta
+          name="keywords"
+          content="dijital oyun geliştiricileri, oyun geliştirme, yazılım geliştirme, amasya üniversitesi, projeler"
+        />
+
+        {/* Open Graph - Sosyal Medya Paylaşımı */}
+        <meta
+          property="og:title"
+          content="Dijital Oyun Geliştiricileri Kulübü"
+        />
+        <meta
+          property="og:description"
+          content="Amasya Üniversitesi'nde oyun ve yazılım geliştirme alanında projeler üreten bir kulüp."
+        />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://audoyge.vercel.app/" />
+
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Dijital Oyun Geliştiricileri Kulübü"
+        />
+        <meta
+          name="twitter:description"
+          content="Amasya Üniversitesi'nde oyun ve yazılım geliştirme projeleri üreten topluluk."
+        />
+        <meta name="twitter:image" content="/logo.png" />
+
+        {/* Viewport Ayarı */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
+
       <div className="flex flex-col items-center gap-16 p-8 lg:p-16 max-w-7xl mx-auto">
         {/* Başlıklar */}
         <div className="text-center mt-8 space-y-6 lg:space-y-8">
