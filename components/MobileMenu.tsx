@@ -41,10 +41,10 @@ const MobileMenu = () => {
 
           <Link
             href="/kulube-uye-ol"
-            className="px-4 py-2"
+            className="py-2"
             onClick={() => setOpen(false)}
           >
-            <Button>Kulübe Üye Ol</Button>
+            <Button className="m-0">Kulübe Üye Ol</Button>
           </Link>
         </div>
       </SheetContent>
