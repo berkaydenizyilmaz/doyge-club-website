@@ -9,7 +9,7 @@ const Header = () => {
   const pathname = usePathname(); // Kullanıcının mevcut sayfasını al
 
   return (
-    <header className="bg-[#17153B] p-4 shadow-md">
+    <header className="bg-menu p-4 shadow-md">
       {/* Logo */}
       <div className="container mx-auto flex flex-row justify-between items-center">
         <Link href="/">
@@ -32,7 +32,7 @@ const Header = () => {
           <Link
             href="/"
             className={`text-lg hover:underline transition duration-300 ${
-              pathname === "/" ? "text-purple-300 underline" : "text-white"
+              pathname === "/" ? "text-[#62b6cb] underline" : ""
             }`}
           >
             Ana Sayfa
@@ -46,9 +46,7 @@ const Header = () => {
           <Link
             href="/hakkimizda"
             className={`text-lg hover:underline transition duration-300 ${
-              pathname === "/hakkimizda"
-                ? "text-purple-300 underline"
-                : "text-white"
+              pathname === "/hakkimizda" ? "text-[#62b6cb] underline" : ""
             }`}
           >
             Hakkımızda
@@ -56,9 +54,7 @@ const Header = () => {
           <Link
             href="/projeler"
             className={`text-lg hover:underline transition duration-300 ${
-              pathname.startsWith("/projeler")
-                ? "text-purple-300 underline"
-                : "text-white"
+              pathname.startsWith("/projeler") ? "text-[#62b6cb] underline" : ""
             }`}
           >
             Projeler
@@ -66,17 +62,15 @@ const Header = () => {
           <Link
             href="/iletisim"
             className={`text-lg hover:underline transition duration-300 ${
-              pathname === "/iletisim"
-                ? "text-purple-300 underline"
-                : "text-white"
+              pathname === "/iletisim" ? "text-[#62b6cb] underline" : ""
             }`}
           >
             İletişim
           </Link>
           <Link
             href="/kulube-uye-ol"
-            className={`bg-purple-300 text-purple-800 font-semibold px-4 py-2 rounded-md hover:bg-purple-200 transition duration-300 ${
-              pathname === "/kulube-uye-ol" ? "text-purple-800 underline" : ""
+            className={`bg-[#d7e3fc] font-semibold px-4 py-2 rounded-md hover:bg-[#abc4ff] transition duration-300 ${
+              pathname === "/kulube-uye-ol" ? " underline" : ""
             }`}
           >
             Kulübe Üye Ol

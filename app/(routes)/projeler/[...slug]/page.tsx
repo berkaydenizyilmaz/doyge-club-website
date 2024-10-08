@@ -81,7 +81,7 @@ const ProjectDetail = ({ params }: ProjectDetailsProps) => {
         </div>
 
         {/* Detaylı Açıklama ve Teknik Detaylar / Özellikler */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-32 shadow-sm bg-purple-900 rounded-sm">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-32 shadow-sm bg-primary-light rounded-sm">
           <div>
             <h2 className="text-2xl font-semibold p-4">Detaylı Açıklama</h2>
             <p className="mb-4 whitespace-pre-line p-4">{project.detail}</p>
@@ -126,7 +126,7 @@ const ProjectDetail = ({ params }: ProjectDetailsProps) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button className="px-4 py-2 bg-purple-700 text-white font-semibold rounded-lg text-lg hover:bg-purple-600 hover:text-white transition">
+              <Button className="mt-4 bg-[#7575fc] text-primary-light hover:text-primary-dark">
                 {"Github'da İncele"}
               </Button>
             </Link>
@@ -135,7 +135,9 @@ const ProjectDetail = ({ params }: ProjectDetailsProps) => {
 
         {/* Proje Ekibi */}
         <div>
-          <h2 className="text-3xl font-semibold text-center">Proje Ekibi</h2>
+          <h2 className="text-3xl font-semibold text-center mt-6">
+            Proje Ekibi
+          </h2>
           <div className="p-6 text-center">
             {project.projectTeam.map((member, index) => (
               <p key={index}>

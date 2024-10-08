@@ -47,7 +47,7 @@ const ProjectsPage = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="bg-purple-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
+              className="bg-primary-light p-6 rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
             >
               <Image
                 src={project.mainImg}
@@ -59,8 +59,8 @@ const ProjectsPage = () => {
               <h2 className="text-2xl font-semibold mt-4">{project.title}</h2>
               <p className="mt-2">{project.shortDescription}</p>
               <Link href={`/projeler/${project.id}`} passHref>
-                <Button className="bg-purple-400 text-purple-900 font-semibold hover:bg-purple-600 hover:text-purple-100 transition mt-4 py-2 px-4 rounded-lg">
-                  Proje Detayı
+                <Button className="mt-4 bg-[#7575fc] text-primary-light hover:text-primary-dark">
+                  Projeyi İncele
                 </Button>
               </Link>
             </div>

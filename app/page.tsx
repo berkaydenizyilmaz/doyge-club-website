@@ -71,9 +71,7 @@ const Home = () => {
 
         {/* Hakkımızda Butonu */}
         <Link href="/hakkimizda" passHref>
-          <p className="mt-4 py-3 px-8 bg-purple-400 text-purple-900 font-semibold rounded-lg text-lg hover:bg-purple-600 hover:text-purple-100 transition">
-            Hakkımızda
-          </p>
+          <Button>Hakkımızda</Button>
         </Link>
 
         {/* Resim */}
@@ -96,7 +94,7 @@ const Home = () => {
             {doygeContent.map((item, index) => (
               <div
                 key={index}
-                className="p-6 bg-primary-dark rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
+                className="p-6 bg-primary-light rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:scale-105"
               >
                 <h3 className="text-2xl lg:text-3xl font-semibold mb-4">
                   {item.title}
@@ -131,9 +129,7 @@ const Home = () => {
                 <p className="text-lg">{projects[0].shortDescription}</p>
 
                 <Link href={`/projeler/doyge-bot`} passHref>
-                  <Button className="bg-purple-400 text-purple-900 font-semibold hover:bg-purple-600 hover:text-purple-100 transition mt-4 py-2 px-4 rounded-lg">
-                    Projeye Git
-                  </Button>
+                  <Button className="mt-4">Projeye Git</Button>
                 </Link>
               </div>
             </div>
@@ -156,9 +152,9 @@ const Home = () => {
                 <p className="text-lg">{projects[1].shortDescription}</p>
 
                 <Link href={`/projeler/tilevania`} passHref>
-                  <Button className="bg-purple-400 text-purple-900 font-semibold hover:bg-purple-600 hover:text-purple-100 transition mt-4 py-2 px-4 rounded-lg">
-                    Projeye Git
-                  </Button>
+                  <Link href={`/projeler/doyge-bot`} passHref>
+                    <Button className="mt-4">Projeye Git</Button>
+                  </Link>
                 </Link>
               </div>
             </div>
@@ -193,16 +189,16 @@ const Home = () => {
                     {/* Tarih ve Link Kısımları */}
                     <div className="mt-6">
                       {announcement.date && (
-                        <p className="text-lg mt-4 bg-primary-dark rounded-md p-2 text-white">
+                        <p className="text-lg mt-4 bg-[#a3a3f8] rounded-md p-2">
                           Tarih: {announcement.date}
                         </p>
                       )}
 
                       {announcement.link && (
                         <Link href={announcement.link} passHref>
-                          <p className="text-lg mt-4 bg-purple-400 text-purple-900 font-semibold rounded-lg py-2 px-4 hover:bg-purple-600 hover:text-purple-100 transition cursor-pointer">
+                          <Button className="w-full bg-[#7575fc] text-primary-light hover:text-primary-dark">
                             {announcement.linkText}
-                          </p>
+                          </Button>
                         </Link>
                       )}
                     </div>

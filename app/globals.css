@@ -77,6 +77,6 @@ html {
     @apply border-border;
   }
   body {
-    @apply bg-[#4F1787] text-white !important;
+    @apply bg-[#e7ecef] text-[#1b4965];
   }
 }

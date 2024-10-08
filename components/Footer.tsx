@@ -5,27 +5,34 @@ import React from "react";
 const Footer = () => {
   return (
     <div>
-      <div className="bg-primary-dark text-white p-6">
-        <div className="flex justify-between items-center md:flex-row ">
+      <div className="">
+        <div className="bg-menu flex justify-between items-center md:flex-row shadow-inner">
           {/* Logo Bölümü */}
           <div className="flex w-1/3 justify-center mb-4 md:mb-0">
             <Image
               src="/logo.png"
-              alt="Doyge Kulübü"
               width={150}
               height={150}
+              alt="Logo"
+              className="mb-4 md:mb-0"
             />
           </div>
 
           {/* Orta Bölüm - Hakkımızda ve İletişim */}
           <div className="flex flex-col w-1/3 gap-6 text-center mb-4 md:mb-0 justify-center md:justify-center">
             <div>
-              <Link href="/hakkimizda" className="text-lg md:text-base">
+              <Link
+                href="/hakkimizda"
+                className="text-lg md:text-base hover:underline"
+              >
                 Hakkımızda
               </Link>
             </div>
             <div>
-              <Link href="/iletisim" className="text-lg md:text-base">
+              <Link
+                href="/iletisim"
+                className="text-lg md:text-base hover:underline"
+              >
                 İletişim
               </Link>
             </div>
@@ -56,7 +63,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-[#24052F] text-center text-sm md:text-base">
+      <div className="bg-[#edf2fb] text-center text-sm md:text-base">
         &copy; {new Date().getFullYear()} Doyge Kulübü. Tüm Hakları Saklıdır.
       </div>
     </div>
