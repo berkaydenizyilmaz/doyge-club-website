@@ -11,7 +11,7 @@ const MobileMenu = () => {
       <SheetTrigger asChild>
         <Button className="md:hidden">☰</Button>
       </SheetTrigger>
-      <SheetContent side="right" className="bg-primary-light">
+      <SheetContent side="right" className="">
         <h2 className="text-xl font-bold p-4">Menü</h2>
         <div className="flex flex-col space-y-2 p-4">
           <Link href="/" className="text-lg" onClick={() => setOpen(false)}>
@@ -41,10 +41,10 @@ const MobileMenu = () => {
 
           <Link
             href="/kulube-uye-ol"
-            className="bg-purple-300 text-purple-800 font-semibold px-4 py-2 rounded-md hover:bg-purple-200 transition duration-300"
+            className="px-4 py-2"
             onClick={() => setOpen(false)}
           >
-            Kulübe Üye Ol
+            <Button>Kulübe Üye Ol</Button>
           </Link>
         </div>
       </SheetContent>
