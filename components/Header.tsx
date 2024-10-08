@@ -11,14 +11,14 @@ const Header = () => {
   return (
     <header className="bg-menu p-4 shadow-md">
       {/* Logo */}
-      <div className="container mx-auto flex flex-row justify-between items-center">
+      <div className="container mx-auto flex flex-row justify-between items-center h-24">
         <Link href="/">
           <Image
             src="/logo.png"
-            width={150}
-            height={150}
+            width={1024}
+            height={1024}
             alt="Logo"
-            className="mb-4 md:mb-0"
+            className="mb-4 md:mb-0 h-60 w-60"
           />
         </Link>
 
