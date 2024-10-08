@@ -9,7 +9,7 @@ const Header = () => {
   const pathname = usePathname(); // Kullanıcının mevcut sayfasını al
 
   return (
-    <header className="bg-primary-dark p-4 shadow-md">
+    <header className="bg-[#17153B] p-4 shadow-md">
       {/* Logo */}
       <div className="container mx-auto flex flex-row justify-between items-center">
         <Link href="/">
