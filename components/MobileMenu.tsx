@@ -11,7 +11,7 @@ const MobileMenu = () => {
       <SheetTrigger asChild>
         <Button className="md:hidden">☰</Button>
       </SheetTrigger>
-      <SheetContent side="right" className="bg-purple-900 text-white">
+      <SheetContent side="right" className="bg-primary-light">
         <h2 className="text-xl font-bold p-4">Menü</h2>
         <div className="flex flex-col space-y-2 p-4">
           <Link href="/" className="text-lg" onClick={() => setOpen(false)}>
