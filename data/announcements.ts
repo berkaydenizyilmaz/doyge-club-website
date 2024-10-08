@@ -9,13 +9,6 @@ export interface AnnouncementType {
 
 export const announcements: AnnouncementType[] = [
   {
-    id: "1",
-    title: "LinkedIn ve Medium Ortak Eğitimi",
-    content:
-      "DOYGE ve Yazılım Geliştirme Kulübü ile ortak olarak düzenlediğimiz LinkedIn ve Medium eğitimine katılmayı unutmayın.",
-    date: "8 Ekim Salı 15:15",
-  },
-  {
     id: "2",
     title: "Oyun Turnuvası",
     content:
