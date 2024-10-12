@@ -11,7 +11,7 @@ export const kbs: KbsType[] = [
     title: "Adım 1",
     description:
       "Açılan sayfada ilk boşluğa sadece öğrenci numaranızı ikinci boşluğa OBİS (öğrenci bilgi sistemi) şifrenizi girin.",
-    img: "/kbs/kbs3.png",
+    img: "/kbs/kbs1.png",
   },
   {
     id: "2",
