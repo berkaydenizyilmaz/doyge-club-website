@@ -24,7 +24,7 @@ export const kbs: KbsType[] = [
     id: "3",
     title: "Adım 3",
     description:
-      "“kulüp üyesi” sekmesi gözükmüyorsa profil sekmesinden aşağıdaki alanları doldurup kaydet butonuna tıklayın.",
+      "“Kulüp üyelik” sekmesi gözükmüyorsa profil sekmesinden aşağıdaki alanları doldurup kaydet butonuna tıklayın.",
     img: "/kbs/kbs3.png",
   },
   {
