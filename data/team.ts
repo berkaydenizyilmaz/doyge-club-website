@@ -39,7 +39,7 @@ export const team: EkipType[] = [
     id: "5",
     name: "Oğuzhan Çabuk",
     role: "Yazılım Ekip Üyesi",
-    img: "/ekip/ozi.jpeg",
+    img: "",
     linkedin: "https://www.linkedin.com/in/o%C4%9Fuzhan-%C3%A7-7b2a2b182/",
   },
   {
